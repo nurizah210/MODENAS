@@ -1,0 +1,142 @@
+Updating A:\MJ\stoktake\stoktake.csproj 
+A:\MJ\stoktake\stoktake.csproj was updated successfully 
+Updating A:\MJ\stoktake\About.aspx 
+A:\MJ\stoktake\About.aspx was updated successfully 
+Updating A:\MJ\stoktake\Contact.aspx 
+A:\MJ\stoktake\Contact.aspx was updated successfully 
+Updating A:\MJ\stoktake\Default.aspx 
+A:\MJ\stoktake\Default.aspx was updated successfully 
+Updating A:\MJ\stoktake\frm_scos_inv_list.aspx 
+A:\MJ\stoktake\frm_scos_inv_list.aspx was updated successfully 
+Updating A:\MJ\stoktake\frm_stock_recon.aspx 
+A:\MJ\stoktake\frm_stock_recon.aspx was updated successfully 
+Updating A:\MJ\stoktake\frm_stock_recon_blank.aspx 
+A:\MJ\stoktake\frm_stock_recon_blank.aspx was updated successfully 
+Updating A:\MJ\stoktake\frm_stock_recon_new.aspx 
+A:\MJ\stoktake\frm_stock_recon_new.aspx was updated successfully 
+Updating A:\MJ\stoktake\frm_stock_recon_new_detail.aspx 
+A:\MJ\stoktake\frm_stock_recon_new_detail.aspx was updated successfully 
+Updating A:\MJ\stoktake\Global.asax 
+A:\MJ\stoktake\Global.asax was updated successfully 
+Updating A:\MJ\stoktake\index.aspx 
+A:\MJ\stoktake\index.aspx was updated successfully 
+Updating A:\MJ\stoktake\Login.aspx 
+A:\MJ\stoktake\Login.aspx was updated successfully 
+Updating A:\MJ\stoktake\Report\SectionReport1.cs 
+A:\MJ\stoktake\Report\SectionReport1.cs was updated successfully 
+Updating A:\MJ\stoktake\Report\SectionReport1.rpx 
+A:\MJ\stoktake\Report\SectionReport1.rpx was updated successfully 
+Updating A:\MJ\stoktake\Report\test1.cs 
+A:\MJ\stoktake\Report\test1.cs was updated successfully 
+Updating A:\MJ\stoktake\Report\test1.rpx 
+A:\MJ\stoktake\Report\test1.rpx was updated successfully 
+Updating A:\MJ\stoktake\StockTakeMain.aspx 
+A:\MJ\stoktake\StockTakeMain.aspx was updated successfully 
+Updating A:\MJ\stoktake\ViewSwitcher.ascx 
+A:\MJ\stoktake\ViewSwitcher.ascx was updated successfully 
+Updating A:\MJ\stoktake\Web.config 
+A:\MJ\stoktake\Web.config was updated successfully 
+Installing System.Buffers version 4.5.1 to stoktake
+Package System.Buffers version 4.5.1 installed successfully.
+Installing System.Numerics.Vectors version 4.5.0 to stoktake
+Package System.Numerics.Vectors version 4.5.0 installed successfully.
+Installing System.Runtime.CompilerServices.Unsafe version 5.0.0 to stoktake
+Package System.Runtime.CompilerServices.Unsafe version 5.0.0 installed successfully.
+Installing System.ValueTuple version 4.5.0 to stoktake
+Package System.ValueTuple version 4.5.0 installed successfully.
+Installing Portable.BouncyCastle version 1.8.2 to stoktake
+Package Portable.BouncyCastle version 1.8.2 installed successfully.
+Installing DocumentFormat.OpenXml version 2.12.1 to stoktake
+Package DocumentFormat.OpenXml version 2.12.1 installed successfully.
+Installing Microsoft.Bcl.AsyncInterfaces version 5.0.0 to stoktake
+Package Microsoft.Bcl.AsyncInterfaces version 5.0.0 installed successfully.
+Installing System.Threading.Tasks.Extensions version 4.5.4 to stoktake
+Package System.Threading.Tasks.Extensions version 4.5.4 installed successfully.
+Installing System.Text.Encodings.Web version 5.0.1 to stoktake
+Package System.Text.Encodings.Web version 5.0.1 installed successfully.
+Installing System.Memory version 4.5.4 to stoktake
+Package System.Memory version 4.5.4 installed successfully.
+Installing System.Text.Json version 5.0.2 to stoktake
+Package System.Text.Json version 5.0.2 installed successfully.
+Installing Gcef.Data.VBFunctionLib version 3.2.0 to stoktake
+Package Gcef.Data.VBFunctionLib version 3.2.0 installed successfully.
+Installing Gcef.Data.ExpressionInfo version 3.2.0 to stoktake
+Package Gcef.Data.ExpressionInfo version 3.2.0 installed successfully.
+Installing Gcef.Data.DataEngine version 3.2.0 to stoktake
+Package Gcef.Data.DataEngine version 3.2.0 installed successfully.
+Installing GrapeCity.Documents.Imaging.Windows version 6.0.5 to stoktake
+Package GrapeCity.Documents.Imaging.Windows version 6.0.5 installed successfully.
+Installing GrapeCity.Documents.DX.Windows version 6.0.5 to stoktake
+Package GrapeCity.Documents.DX.Windows version 6.0.5 installed successfully.
+Installing GrapeCity.Documents.Imaging version 6.0.5 to stoktake
+Package GrapeCity.Documents.Imaging version 6.0.5 installed successfully.
+Installing GrapeCity.Documents.Pdf version 6.0.5 to stoktake
+Package GrapeCity.Documents.Pdf version 6.0.5 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Rdl version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Rdl version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Rendering version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Rendering version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Drawing.Gdi version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Drawing.Gdi version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Drawing.Gc version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Drawing.Gc version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Document.Drawing.Gc version 4.1.0 to stoktake
+Package GrapeCity.ActiveReports.Core.Document.Drawing.Gc version 4.1.0 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Document.Drawing.Gdi version 4.1.0 to stoktake
+Package GrapeCity.ActiveReports.Core.Document.Drawing.Gdi version 4.1.0 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Document version 4.1.0 to stoktake
+Package GrapeCity.ActiveReports.Core.Document version 4.1.0 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Pdf.Section version 4.1.0 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Pdf.Section version 4.1.0 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Tiff.Section version 4.1.0 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Tiff.Section version 4.1.0 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Image.Page version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Image.Page version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Pdf.Page version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Pdf.Page version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Svg.Page version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Svg.Page version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Html.Page version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Html.Page version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Text.Page version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Text.Page version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Excel.Page version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Excel.Page version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Export.Word.Page version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Export.Word.Page version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Scripting version 3.5.4 to stoktake
+Package GrapeCity.ActiveReports.Core.Scripting version 3.5.4 installed successfully.
+Installing GrapeCity.ActiveReports.Core.DataProviders version 2.1.2 to stoktake
+Package GrapeCity.ActiveReports.Core.DataProviders version 2.1.2 installed successfully.
+Installing GrapeCity.ActiveReports.Core.Svg version 1.0.2 to stoktake
+Package GrapeCity.ActiveReports.Core.Svg version 1.0.2 installed successfully.
+Installing GrapeCity.DataVisualization.Chart version 0.4.118 to stoktake
+Package GrapeCity.DataVisualization.Chart version 0.4.118 installed successfully.
+Installing GrapeCity.ActiveReports version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Chart version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Chart version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Chart.Win version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Chart.Win version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Export.Image version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Export.Image version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Export.Excel version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Export.Excel version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.SpreadBuilder version 2.0.0 to stoktake
+Package GrapeCity.ActiveReports.SpreadBuilder version 2.0.0 installed successfully.
+Installing GrapeCity.ActiveReports.Export.Word version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Export.Word version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Export.Html version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Export.Html version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Export.Xml version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Export.Xml version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Export.Pdf version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Export.Pdf version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Viewer.Win version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Viewer.Win version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Design.Win version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Design.Win version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Viewer.Common version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Viewer.Common version 17.0.3 installed successfully.
+Installing GrapeCity.ActiveReports.Serializer.VS2022 version 17.0.3 to stoktake
+Package GrapeCity.ActiveReports.Serializer.VS2022 version 17.0.3 installed successfully.

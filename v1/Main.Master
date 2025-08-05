@@ -1,0 +1,387 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="vms.v1.Main" %>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMS</title>
+    <link rel="icon" type="image/x-icon" href="../Theme/dist/img/Logo.png">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Theme/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../Theme/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../Theme/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="../Theme/plugins/jquery/jquery.min.js"></script>
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../Theme/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../Theme/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../Theme/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../Theme/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../Theme/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../Theme/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../Theme/plugins/summernote/summernote-bs4.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+
+ 
+    <style>
+
+ .nav-link i.fa-bell {
+  vertical-align: middle;
+  line-height: 1;
+}
+
+
+        .main-sidebar .nav-link {
+    color: white !important;
+}
+
+.main-sidebar .nav-link:hover {
+    color: white !important;
+    background: #595959;
+
+}
+
+.main-sidebar .nav-item:hover {
+    color: white !important;
+     background: #595959;
+}
+
+ .main-sidebar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+   html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-sidebar {
+    width: 200px !important;
+}
+
+.content-wrapper {
+    margin-left: 200px !important;
+}
+        .content-wrapper {
+            background-color: #e1eaf4; /* Set your desired background color */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex: 1; /* This makes it stretch to fill the remaining space */
+        }
+.main-header ,.main-footer, body{
+   background-color: white
+
+}
+
+ 
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed custom-gradient-bg">
+
+
+  
+    <form id="form1" runat="server" enctype="multipart/form-data">
+              <asp:HiddenField ID="hfActiveTab" runat="server" />
+        <div class="wrapper">
+<asp:ScriptManager ID="ScriptManager1" runat="server" />
+          
+
+            <!-- Preloader -->
+            <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="../Theme/dist/img/MODENAS_LOGO_BLUE_125.png" alt="AdminLTELogo" height="125" width="220">
+            </div>
+
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light py-1">
+  <ul class="navbar-nav ml-auto d-flex flex-wrap align-items-center gap-2" style="flex-direction: row; font-size: 0.9rem;">
+          
+ <!-- Notification Dropdown -->
+<li class="nav-item dropdown">
+<!-- Notification Bell -->
+<a class="nav-link px-2 position-relative" data-toggle="dropdown" href="#" style="font-size: 0.9rem; color: #1A1A40;">
+    <i class="fa-solid fa-bell fa-lg"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;" runat="server" id="badgeNotif" visible="false">!</span>
+</a>
+ 
+
+
+<!-- Dropdown content -->
+<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="width: 300px; font-size: 0.85rem;">
+    <asp:Repeater ID="rptNotifications" runat="server">
+        <ItemTemplate>
+            <div class="dropdown-item text-wrap">
+                <%# Eval("Message") %>
+            </div>
+        <div class="dropdown-divider"></div>
+      </ItemTemplate>
+    </asp:Repeater>
+    <asp:Label ID="lblNoNotif" runat="server" Text="No notifications" CssClass="dropdown-item text-muted" Visible="false" />
+  </div>
+</li>
+        
+    <!-- Profile Dropdown Menu -->
+   <li class="nav-item dropdown">
+  <a class="nav-link px-2" data-toggle="dropdown" href="#" style="font-size: 0.9rem; color: #1A1A40; font-family: 'Segoe UI', sans-serif;font-weight: bold;">
+    <%= tmpUsername %>
+  </a>
+  <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="background-color: #f0f0f0; font-family: 'Segoe UI', sans-serif; font-size: 0.9rem;">
+    <a href="Logout.aspx" class="dropdown-item" style="color: #1A1A40;font-weight: bold;">Logout</a>
+  </div>
+</li>
+
+  </ul>
+</nav>
+
+            <!-- Main Sidebar Container -->
+           <aside id="sidebar" class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #3c4f60; transition: all 0.3s;">
+
+                <a href="https://modenas.my/" class="brand-link">
+                    <img src="../Theme/dist/img/MODENAS_LOGO_WHITE_BG_BLACK.png" alt="KAWASAKI Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <span class="brand-text font-weight-bold">SMS</span>
+                </a>
+
+                <div class="sidebar">
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="../Theme/dist/img/avatar.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="RequestStatus.aspx" class="d-block"><%= tmpUsername %></a>
+                        </div>
+                    </div>
+                   
+                    <% 
+    string role = Session["role"]?.ToString()?.ToUpper() ?? "";
+    string position = Session["position"]?.ToString()?.ToUpper() ?? "";
+    string department = Session["department"]?.ToString()?.ToUpper() ?? "";
+    bool isOfficeDept = new[] { "HCD", "IT", "FN", "PROC", "BD", "EX", "EV", "CEO OFFICE" }.Contains(department);
+    bool showSummaryMenu = position == "MANAGER" || department == "HCD";
+%>
+
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <li class="nav-item">
+                                <a href="Dashboard.aspx" class="nav-link">
+                                    <i class="fas fa-home "></i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+
+                            <% if (showSummaryMenu) { %>
+    <li class="nav-item">
+        <a href="DashboardReport.aspx" class="nav-link">
+            <i class="fas fa-chart-pie"></i>
+            <p>Summary</p>
+        </a>
+    </li>
+<% } %>
+
+                  <% if (position != "AUXILIARY POLICE") { %>
+
+    <% if (isOfficeDept) { %>
+        <!-- Exit Request (Office) -->
+        <li class="nav-item">
+            <a href="LeaveRequest2.aspx" class="nav-link">
+                <i class="fas fa-running"></i> 
+                <p>Exit Request </p>
+            </a>
+        </li>
+
+        <!-- Exit Request II (Behalf) -->
+        <li class="nav-item">
+            <a href="OnBehalfReq2.aspx" class="nav-link">
+                <i class="fas fa-running"></i> 
+                <p>Exit Request<span style="font-style: italic;">(Behalf)</span></p>
+            </a>
+        </li>
+    <% } else { %>
+        <!-- Exit Request (Prod/R&D) -->
+        <li class="nav-item">
+            <a href="LeaveRequest.aspx" class="nav-link">
+                <i class="fas fa-running"></i> 
+                <p>Exit Request</p>
+            </a>
+        </li>
+
+        <!-- Exit Request I (Behalf) -->
+        <li class="nav-item">
+            <a href="OnBehalfReq.aspx" class="nav-link">
+                <i class="fas fa-running"></i> 
+                 <p>Exit Request<span style="font-style: italic;">(Behalf)</span></p>
+            </a>
+        </li>
+    <% } %>
+
+<% } %>
+
+                           
+                            <li class="nav-item">
+                      <a href="RequestStatus.aspx" class="nav-link">
+                    <i class="fas fa-hourglass-half "></i> 
+                           <p>Request Status</p>
+                                </a>
+                                </li>
+
+          <% 
+    
+    if (position == "AUXILIARY POLICE" || role == "SUPER ADMIN" || role == "ADMIN")
+    {
+%>
+
+    <li class="nav-item">
+        <a href="Post1.aspx" class="nav-link">
+            <i class="fas fa-shield-alt"></i>
+            <p>Post 1</p>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="Post2.aspx" class="nav-link">
+            <i class="fas fa-shield-alt"></i>
+            <p>Post 2</p>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="SecurityReport.aspx" class="nav-link">
+            <i class="fas fa-pen-alt"></i>
+            <p>KP Report</p>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="AuxiliaryPolice.aspx" class="nav-link">
+            <i class="fas fa-pen-alt"></i>
+            <p>AP Report</p>
+        </a>
+    </li>
+
+<% } %>
+<% if ((Session["position"]?.ToString()?.ToUpper() ?? "") == "MANAGER") { %>
+    <li class="nav-item">
+        <a href="HODApproval.aspx" class="nav-link">
+            <i class="far fa-check-square"></i> 
+            <p>Request Approval</p>
+        </a>
+    </li>
+<% } %>
+<%
+   
+
+    if (department == "HCD")
+    {
+%>
+    <li class="nav-item">
+        <a href="Payroll.aspx" class="nav-link">
+            <i class="fas fa-users"></i> 
+            <p>Staff Record</p>
+        </a>
+    </li>
+<% } %>
+
+
+<% if (role == "SUPER ADMIN" || role == "ADMIN"){ %>
+    <li class="nav-item">
+        <a href="ManageStaff.aspx" class="nav-link">
+            <i class="fa-solid fa-user-tie"></i>
+            <p>Admin Console</p>
+        </a>
+    </li>
+<% } %>
+     
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <div class="content-header">
+                    <!-- /.container-fluid -->
+                </div>
+
+                <div class="container-fluid">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <footer class="main-footer">
+                <strong>Copyright © 1995-<%= DateTime.Now.Year %> <a href="https://modenas.my">MODENAS</a> [199501025408 (354613-V)].</strong>
+                All rights reserved. 
+            </footer>
+
+        </div>
+    </form>
+
+    <!-- Scripts placed before closing body tag for faster load -->
+    <script src="../Theme/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../Theme/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Theme/plugins/chart.js/Chart.min.js"></script>
+    <script src="../Theme/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="../Theme/plugins/moment/moment.min.js"></script>
+    <script src="../Theme/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="../Theme/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../Theme/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="../Theme/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="../Theme/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../Theme/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../Theme/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../Theme/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../Theme/plugins/jszip/jszip.min.js"></script>
+    <script src="../Theme/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../Theme/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../Theme/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../Theme/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../Theme/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="../Theme/dist/js/adminlte.js"></script>
+    <script>
+  function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString('en-GB', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    }).replace(',', '');
+    document.getElementById('datetime').textContent = dateTimeString;
+  }
+
+  setInterval(updateDateTime, 1000);
+  updateDateTime(); // Initial call
+    </script>
+    
+
+</body>
+
+    
+
+</html>
